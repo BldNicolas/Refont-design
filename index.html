@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
-    <title>Webpage Design</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cours de design et de codage">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
     <link rel="stylesheet" href="./css/screen.css">
+    <title>Webpage Design</title>
 </head>
 <body>
 
-    <div class="main">
+    <main class="main">
         <nav class="navbar">
-            <div class="icon">
-                <h2 class="logo"></h2>
+            <div class="icon" role="img">
+                <h2 class="logo">NB</h2>
             </div>
-
-            <div class="menu">
+            <nav class="menu">
                 <ul>
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">ABOUT</a></li>
@@ -21,47 +27,51 @@
                     <li><a href="#">DESIGN</a></li>
                     <li><a href="#">CONTACT</a></li>
                 </ul>
-            </div>
+            </nav>
 
-            <div class="search">
-                <input class="srch" type="search" name="" placeholder="Type To text">
-                <a href="#"> <button class="btn">Search</button></a>
-            </div>
+            <form action="#" method="get" class="search">
+                <input class="srch" type="search" name="#" placeholder="Type To text">
+                <button class="btn">Search</button>
+            </form>
 
         </nav> 
-        <div class="content">
-            <h1>Web Design & <br><span>Development</span> <br>Course</h1>
+        <section class="content" role="main">
+            <h1>Web Design & <br>
+                <span>Development</span> <br>
+                Course
+            </h1>
             <p class="par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt neque 
-                 expedita atque eveniet <br> quis nesciunt. Quos nulla vero consequuntur, fugit nemo ad delectus 
-                <br> a quae totam ipsa illum minus laudantium?</p>
+                 expedita atque eveniet <br>
+                 quis nesciunt. Quos nulla vero consequuntur, fugit nemo ad delectus <br>
+                 a quae totam ipsa illum minus laudantium?
+            </p>
 
-                <button class="cn"><a href="#">JOIN US</a></button>
+            <form action="#" method="get">
+                <button class="cn">JOIN US</button>
+            </form>
 
-                <div class="form">
-                    <h2>Login Here</h2>
-                    <input type="email" name="email" placeholder="Enter Email Here">
-                    <input type="password" name="" placeholder="Enter Password Here">
-                    <button class="btnn"><a href="#">Login</a></button>
+            <form action="#" method="get" class="form">
+                <h2>Login Here</h2>
+                <input type="email" name="email" placeholder="Enter Email Here">
+                <input type="password" name="password" placeholder="Enter Password Here">
+                <button class="btnn">Login</button>
 
-                    <p class="link">Don't have an account<br>
-                    <a href="#">Sign up </a> here</a></p>
-                    <p class="liw">Log in with</p>
+                <p class="link">Don't have an account<br>   
+                <a href="#">Sign up </a>
+                here</p>
+                <p class="liw">Log in with</p>
 
-                    <div class="icons">
-                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
-                    </div>
-
+                <div class="icons" role="group">
+                    <a href="#"><ion-icon name="logo-facebook" aria-label="logo facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram" aria-label="logo instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter" aria-label="logo twitter"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-google" aria-label="logo google"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-skype" aria-label="logo skype"></ion-icon></a>
                 </div>
-                    </div>
-                </div>
-        </div>
-    </div>
+            </form>
+        </section>
+    </main>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  
 </body>
 </html>
